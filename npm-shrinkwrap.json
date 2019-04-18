@@ -1042,7 +1042,7 @@
       "integrity": "sha1-3zrhmayt+31ECqrgsp4icrJOxhk="
     },
     "di": {
-      "version": "git+https://github.com/RackHD/di.js.git#f903386e063460930b757c11a1d510ca0a77f638",
+      "version": "git+https://github.com/zhangdahai112/di.js.git#f903386e063460930b757c11a1d510ca0a77f638",
       "requires": {
         "es6-shim": "0.11.1",
         "traceur": "0.0.111"
@@ -3938,7 +3938,7 @@
     },
     "on-core": {
       "//": "Don't add commit hash here.",
-      "version": "git+https://github.com/RackHD/on-core.git",
+      "version": "git+https://github.com/zhangdahai112/on-core.git",
       "requires": {
         "ajv": "4.11.8",
         "always-tail": "0.2.0",
@@ -3949,7 +3949,7 @@
         "bson": "0.4.23",
         "colors": "1.1.2",
         "crypt3": "1.0.0",
-        "di": "git+https://github.com/RackHD/di.js.git#f903386e063460930b757c11a1d510ca0a77f638",
+        "di": "git+https://github.com/zhangdahai112/di.js.git#f903386e063460930b757c11a1d510ca0a77f638",
         "ejs": "2.5.6",
         "eventemitter2": "0.4.14",
         "flat": "1.6.1",
@@ -4027,15 +4027,15 @@
     },
     "on-tasks": {
       "//": "Don't add commit hash here.",
-      "version": "git+https://github.com/RackHD/on-tasks.git",
+      "version": "git+https://github.com/zhangdahai112/on-tasks.git",
       "requires": {
         "ajv": "4.11.8",
-        "di": "git+https://github.com/RackHD/di.js.git#f903386e063460930b757c11a1d510ca0a77f638",
+        "di": "git+https://github.com/zhangdahai112/di.js.git#f903386e063460930b757c11a1d510ca0a77f638",
         "dockerode": "2.5.4",
         "lodash": "3.10.1",
         "node-uuid": "1.4.8",
         "//": "Don't add commit hash here.",
-        "on-core": "git+https://github.com/RackHD/on-core.git",
+        "on-core": "git+https://github.com/zhangdahai112/on-core.git",
         "request": "2.83.0",
         "request-promise": "4.2.2",
         "requestretry": "1.13.0",
