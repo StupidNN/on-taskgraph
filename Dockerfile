@@ -1,9 +1,11 @@
 # Copyright 2016, EMC, Inc.
 
+
 ARG repo=rackhd
 ARG tag=devel
 
-FROM ${repo}/on-tasks:${tag}
+# FROM ${repo}/on-tasks:${tag}
+FROM zdh/on-tasks:1.0
 ARG SNMP_VERSION=snmp-mibs-downloader_1.1_all.deb
 
 COPY . /RackHD/on-taskgraph/
