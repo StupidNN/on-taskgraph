@@ -1,0 +1,10 @@
+# Copyright 2016, EMC, Inc.
+
+
+ARG repo=rackhd
+ARG tag=devel
+
+# FROM ${repo}/on-tasks:${tag}
+FROM zdh/on-taskgraph:3.1
+
+CMD [ "node","--inspect=192.168.1.107:9230", "/RackHD/on-taskgraph/index.js" ]

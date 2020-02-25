@@ -63,7 +63,8 @@ function Runner(configureFile, Logger, uuid, constants,
             // Start the server
             var config = {
                 hostname: configureFile.get ('taskGraphEndpoint', {address: '0.0.0.0'})['address'],
-                httpPort: configureFile.get('taskGraphEndpoint', {port: 9005})['port']
+                httpPort: configureFile.get('taskGraphEndpoint', {port: 9005})['port'],
+                // httpPort: configureFile.get('taskGraphEndpoint', {port: 9030})['port']
             };
             server = http.createServer(app);
 

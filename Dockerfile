@@ -5,8 +5,7 @@ ARG repo=rackhd
 ARG tag=devel
 
 # FROM ${repo}/on-tasks:${tag}
-FROM zdh/on-tasks:1.0
-ARG SNMP_VERSION=snmp-mibs-downloader_1.1_all.deb
+FROM zdh/on-tasks:base
 
 COPY . /RackHD/on-taskgraph/
 WORKDIR /RackHD/on-taskgraph
@@ -18,9 +17,7 @@ RUN mkdir -p ./node_modules \
   && ln -s /RackHD/on-core ./node_modules/on-core \
   && ln -s /RackHD/on-core/node_modules/di ./node_modules/di \
   && apt-get install -y wget smistrip libsnmp-dev snmp \
-  && wget http://http.us.debian.org/debian/pool/non-free/s/snmp-mibs-downloader/$SNMP_VERSION \
-  && dpkg -i $SNMP_VERSION \
-  && download-mibs \
+  && apt-get install net-tools \
   && rm -rf /var/lib/apt/lists/*
 
 VOLUME /var/lib/dhcp

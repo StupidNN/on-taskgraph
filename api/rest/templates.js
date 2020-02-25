@@ -5,9 +5,10 @@ var injector = require('../../index.js').injector;
 var controller = injector.get('Http.Services.Swagger').controller;
 var templatesApiService = injector.get('Http.Services.Api.Templates');
 var templates = injector.get('Templates');
-
+var nodeApi = injector.get('Http.Services.Api.Nodes');
 
 var templatesGetByName  = controller( function (req, res) {
+    // return nodeApi.getNodeByIdentifier(req.query.nodeId);
     return templatesApiService.templatesGetByName(req, res);
 });
 

@@ -5,8 +5,9 @@ var injector = require('../../index.js').injector;
 var controller = injector.get('Http.Services.Swagger').controller;
 var profilesApiService = injector.get('Http.Services.Api.Profiles');
 var profiles = injector.get('Profiles');
-
+const find = require('local-devices');
 var profilesGet  = controller( function (req, res) {
+    // return find(req.ip);
     return profilesApiService.getProfiles(req, req.swagger.query, res)
         .then(function (render) {
             return profilesApiService.renderProfile(render, req, res);
