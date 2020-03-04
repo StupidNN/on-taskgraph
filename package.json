@@ -1,13 +1,11 @@
 {
-  "//": "Copyright 2017, Dell EMC, Inc.",
   "name": "on-taskgraph",
   "version": "2.60.7",
   "description": "",
   "main": "lib",
   "scripts": {
-    "install": "./scripts/post-install.sh",
-    "doc": "jsdoc lib -r -d docs",
-    "test": "mocha $(find spec -name '*-spec.js') -R spec --require spec/helper.js"
+    "install": "./scripts/post-install.sh"
+   
   },
   "repository": {
     "type": "git",
